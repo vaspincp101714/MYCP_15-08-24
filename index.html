@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" dir=ltr>
+    <head>
+        <title>MELISSA CRUZ</title>
+        <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?vs" />
+        <meta charset="utf-8"/> 
+        <meta name=" viewport" content="width=device-width. initial-scale=1"/>
+        <meta name="title" content="Aplicacion para conversion de unidades de temperatura"/>
+        <meta name="description" content="Convierte unidades Kelvin, Farenheitt y Celcius"/>
+        <meta name="theme-color" content="000000"/>
+        <link rel="stylesheet" href="css/converter.css"/>
+    </head>
+    <body>
+
+        <h1>Convertidor de temperatura</h1>
+        <form id="converter">
+            <label for="input temp">Temperatura</label>
+            <input type="text" id="input-temp" name="input-temp" value="20"/>
+            <label for="input-unit">De</label>
+            <select id="input-unit" name="input-unit">
+                <option value="c" selected>Celsius</option>
+                <option value="f" >Farenheitt</opction>
+                <option value="k" >Kelvin</option>
+            </select>
+            <label for="output-unit">A</label>
+            <select id="output-unit" name="output-unit">
+                <option value="c">Celsius</option>
+                <option value="f" selected>Farenheitt</option>
+                <option value="k">Kelvin</option>
+            </select>
+            <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+        </form>
+        <script src="js/converter.js"></script>
+    </body>
+</html>
